@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Texmorph</title>
+    <style>
+        :root {
+            /* Paper Theme Base */
+            --bg-color: #F8F1E4; 
+            --text-color: #2c2c2e;
+            --secondary-text: #666;
+            --glass-bg: rgba(255, 255, 255, 0.4);
+            --border-color: rgba(0, 0, 0, 0.05);
+            
+            /* Logo Gradients (Sky Blue to Light Orange) */
+            --logo-gradient-start: #00C6FB; /* Sky Blue */
+            --logo-gradient-end: #FF9A9E;   /* Light Orange/Peach */
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #000000;
+                --text-color: #e5e5e5;
+                --secondary-text: #98989d;
+                --glass-bg: rgba(255, 255, 255, 0.1);
+                --border-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 56px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        /* ✨ LOGO STYLE (Futura + Gradient) ✨ */
+        .logo {
+            font-family: 'Futura', 'Futura-Medium', 'Century Gothic', sans-serif;
+            font-size: 42px;
+            font-weight: 700;
+            font-style: italic;
+            letter-spacing: -1px;
+            margin-bottom: 8px;
+            display: inline-block;
+            
+            /* Gradient Text */
+            background: linear-gradient(135deg, var(--logo-gradient-start) 0%, var(--logo-gradient-end) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            
+            filter: drop-shadow(0px 4px 10px rgba(79, 172, 254, 0.2));
+        }
+        
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-color);
+            opacity: 0.9;
+        }
+        
+        .last-updated {
+            font-size: 13px;
+            color: var(--secondary-text);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        section { margin-bottom: 32px; }
+        
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--logo-gradient-start);
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-color);
+        }
+        
+        p {
+            margin-bottom: 16px;
+            color: var(--text-color);
+            opacity: 0.9;
+            font-size: 15px;
+        }
+        
+        ul { margin-left: 24px; margin-bottom: 16px; }
+        
+        li {
+            margin-bottom: 8px;
+            color: var(--text-color);
+            opacity: 0.9;
+        }
+        
+        /* Highlight Box */
+        .highlight {
+            background: var(--glass-bg);
+            padding: 24px;
+            border-radius: 16px;
+            position: relative;
+            margin: 32px 0;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-left: 4px solid var(--logo-gradient-start);
+        }
+        
+        .highlight p {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 64px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-color);
+            color: var(--secondary-text);
+            font-size: 13px;
+        }
+        
+        a {
+            color: var(--logo-gradient-start);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        a:hover {
+            opacity: 0.7;
+            text-decoration: underline;
+        }
+        
+        /* Background Decoration */
+        .bg-gradient {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100vh;
+            background: radial-gradient(circle at 80% 10%, rgba(79, 172, 254, 0.08), transparent 40%),
+                        radial-gradient(circle at 10% 90%, rgba(255, 154, 158, 0.08), transparent 40%);
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-gradient"></div>
+
+    <div class="container">
+        <header>
+            <div class="logo">TEXMORPH</div>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: January 6, 2026</p>
+        </header>
+        
+        <section>
+            <h2>Overview</h2>
+            <p>Texmorph ("we", "our", or "the app") is a text utility application developed by Zixiang Zhang. We are committed to protecting your privacy and being transparent about our data practices.</p>
+            
+            <div class="highlight">
+                <p>🔒 Texmorph processes all text content locally on your device. We do not collect, store, or transmit your input or results to any external servers.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Information We Collect</h2>
+            <p>Texmorph is designed with privacy in mind. Here's what we collect:</p>
+            
+            <p><strong>Information We DO NOT Collect:</strong></p>
+            <ul>
+                <li>Text input or processed content</li>
+                <li>Clipboard history</li>
+                <li>Personal identification information</li>
+                <li>Location data</li>
+                <li>Contact information</li>
+                <li>Browsing history</li>
+            </ul>
+            
+            <p><strong>Information Stored Locally:</strong></p>
+            <ul>
+                <li>App preferences (such as enabled cleaning rules) - stored only on your device</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>How We Process Your Data</h2>
+            <p>When you use Texmorph to clean, format, analyze, or process text:</p>
+            <ul>
+                <li>All processing happens entirely on your device</li>
+                <li>No data is sent to external servers</li>
+                <li>Text data exists in memory only while you use the app</li>
+                <li>We cannot access your text content at any time</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Third-Party Services</h2>
+            <p>Texmorph does not integrate any third-party analytics, advertising, or tracking services.</p>
+        </section>
+        
+        <section>
+            <h2>Data Security</h2>
+            <p>Since all data processing occurs locally on your device and we don't collect personal information, your data security is maintained by your device's built-in security features.</p>
+        </section>
+        
+        <section>
+            <h2>Children's Privacy</h2>
+            <p>Texmorph does not knowingly collect any personal information from children under 13. The app is a general utility tool that does not require any personal information to function.</p>
+        </section>
+        
+        <section>
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+        </section>
+        
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us:</p>
+            <p>Email: <a href="mailto:kircerta@gmail.com">kircerta@gmail.com</a></p>
+        </section>
+        
+        <footer>
+            <p>© 2026 Zixiang Zhang. All Rights Reserved.</p>
+            <p style="margin-top: 8px;">Texmorph - Text Utility App for iOS</p>
+        </footer>
+    </div>
+</body>
+</html>
